@@ -38,9 +38,7 @@ namespace CameraApp
 				return stream;
 			});
 
-			//or:
-			//image.Source = ImageSource.FromFile(file.Path);
-			//image.Dispose();
+			
 
 
 		}
