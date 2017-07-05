@@ -8,6 +8,7 @@
     <StackLayout>
         <Button Text="Take Photo" Clicked="Handle_Take_Photo_Clicked"/>
         <Button Text="Camera Roll" Clicked="Handle_Camera_Roll_Clicked"/>
+        <Button Text="Identify" Clicked="Handle_Identify_Clicked"/>
         <Image x:Name="image"/>
     </StackLayout>
 </ContentPage>

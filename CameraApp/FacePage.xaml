@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="CameraApp.FacePage">
+	<ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+            <Label Text="Age:"/>
+            <Label x:Name="labelAge"/>
+            <Label Text="Head Pose Pitch:"/>
+            <Label x:Name="labelHeadPosePitch"/>
+            <Label Text="Head pose Roll:"/>
+            <Label x:Name="labelHeadPoseRoll"/>
+            <Label Text="Head pose Yaw:"/>
+            <Label x:Name="labelHeadPoseYaw"/>
+            <Label Text="Smile:"/>
+            <Label x:Name="labelSmile"/>
+            <Label Text="Glasses:"/>
+            <Label x:Name="labelGlasses"/>
+            <Label Text="Eye Occluded:"/>
+            <Label x:Name="labelOcclusionEyeOccluded"/>
+            <Label Text="Forehead Occluded:"/>
+            <Label x:Name="labelOcclusionForeheadOccluded"/>
+            <Label Text="Mouth Occluded:"/>
+            <Label x:Name="labelOcclusionMouthOccluded"/>
+
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
