@@ -45,9 +45,29 @@ namespace CameraApp
 
 		}
 
-        void Handle_Camera_Roll_Clicked(object sender, System.EventArgs e)
+        async void Handle_Camera_Roll_Clicked(object sender, System.EventArgs e)
         {
-            
-        }
+			await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsPickPhotoSupported)
+			{
+				await DisplayAlert("Pick Photo not supported", ":( No pick photo supported", "OK");
+				return;
+			}
+
+
+            var file = await CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
+			{
+			});
+
+			if (file == null)
+				return;
+
+			await DisplayAlert("File Location", file.Path, "OK");
+
+			
+			image.Source = ImageSource.FromFile(file.Path);
+			
+		}
     }
 }
